@@ -1,0 +1,9 @@
+package works.yermi.mapper;
+
+import java.util.List;
+
+import works.yermi.domain.RoomVO;
+
+public interface RoomMapper {
+	public List<RoomVO> getList();
+}

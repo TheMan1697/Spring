@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="test"/>
+<aop-project name="team_yeosu">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="51" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#team_yeosu#src/main/webapp/WEB-INF/spring/root-context.xml#51" aspect-start-line-number="51" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/team_yeosu/src/main/webapp/WEB-INF/spring/root-context.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:team_yeosu|3:src/main/webapp/WEB-INF/spring/root-context.xml|7:beans:14|8:replyServiceImpl:14" bean-file="/team_yeosu/src/main/webapp/WEB-INF/spring/root-context.xml" bean-start-line="14" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/team_yeosu/src/main/webapp/WEB-INF/spring/root-context.xml" source="=team_yeosu/C:\/Users\/rla10\/.m2\/repository\/org\/springframework\/spring-tx\/5.0.7.RELEASE\/spring-tx-5.0.7.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=team_yeosu/src\/main\/java&lt;works.yermi.service{ReplyServiceImpl.java[ReplyServiceImpl~register~QReplyVO;" target-start-line="20"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="ex02_sang"/>
+</aop-reference-model>

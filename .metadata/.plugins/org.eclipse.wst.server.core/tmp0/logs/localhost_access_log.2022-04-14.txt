@@ -1,0 +1,2 @@
+127.0.0.1 - - [14/Apr/2022:09:55:33 +0900] "GET / HTTP/1.1" 500 9692
+0:0:0:0:0:0:0:1 - - [14/Apr/2022:09:55:36 +0900] "GET /WEB-INF/classes/com/silly/exception/CommonExceptionAdvice.java HTTP/1.1" 404 721

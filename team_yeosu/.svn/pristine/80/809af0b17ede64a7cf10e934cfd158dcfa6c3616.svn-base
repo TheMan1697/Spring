@@ -1,0 +1,22 @@
+package works.yermi.mapper;
+
+import java.util.List;
+
+
+import works.yermi.domain.PensionVO;
+
+public interface PensionMapper {
+	
+	public List<PensionVO> getList();
+	
+	public PensionVO read(String pensionid);
+	
+	public int insert(PensionVO vo);
+	
+	public int insertpensionfilter(PensionVO vo);
+	
+	public int update(PensionVO vo);
+	
+	public int delete(String pensionid);
+	
+}
