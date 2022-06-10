@@ -1,0 +1,13 @@
+package works.yermi.mapper;
+
+import java.util.List;
+
+import works.yermi.domain.RoomVO;
+
+public interface RoomMapper {
+	public List<RoomVO> getList();
+	
+	public RoomVO read(String pensionid);
+	
+	public int insert(RoomVO vo);
+}

@@ -1,0 +1,36 @@
+package works.yermi.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import lombok.AllArgsConstructor;
+import works.yermi.domain.PensionVO;
+import works.yermi.service.PensionService;
+
+@Controller
+@RequestMapping("pension/*")
+@AllArgsConstructor
+public class PensionController {
+	private final PensionService service;
+	
+	@GetMapping("list")
+	public String list(Model model) {
+		model.addAttribute("pensions", service.getList());
+		return "/pension/list";
+	}
+	
+	@GetMapping("list2") @ResponseBody
+	public List<PensionVO> list() {
+		return service.getList();
+	}
+	
+	@GetMapping("detail")
+	public String detail() {
+		return "/pension/detail";
+	}
+}
